@@ -1,7 +1,7 @@
+#ifdef _GAS
+
 #ifndef _GAS_H
 #define _GAS_H
-
-#ifdef _GAS
 
 #pragma once
 

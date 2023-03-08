@@ -1,8 +1,10 @@
 #ifdef _7SEGMENT
+
 #ifndef _H_7SEG
 #define _H_7SEG
 
-namespace seg {
+namespace seg
+{
     void init();
     void test();
     void time();

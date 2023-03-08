@@ -1,3 +1,5 @@
+#ifdef _SENSOR
+
 #include "main.h"
 
 namespace sensor
@@ -225,3 +227,5 @@ namespace sensor
     }
 
 }
+
+#endif

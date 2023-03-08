@@ -17,10 +17,10 @@ namespace net
     const char *getStatusString();
     char *getEventString(int evtNum);
 
-    signed int Net_RSSI();
-    char *Net_SSID();
-    char *Net_MAC();
-    int Net_Status();
+    // signed int Net_RSSI();
+    // char *Net_SSID();
+    // char *Net_MAC();
+    // int Net_Status();
 }
 
 #endif

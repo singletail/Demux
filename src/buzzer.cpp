@@ -1,4 +1,4 @@
-
+#ifdef _BUZZER
 #include "main.h"
 
 #define PIN_BUZZER 32
@@ -21,3 +21,5 @@ namespace buzzer
         analogWrite(PIN_BUZZER, 0);
     }
 }
+
+#endif

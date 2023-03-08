@@ -1,3 +1,5 @@
+#ifdef _MQTT
+
 #include "main.h"
 
 namespace mqtt
@@ -131,3 +133,5 @@ namespace mqtt
         return mqttClient.connected();
     }
 }
+
+#endif

@@ -1,3 +1,5 @@
+#ifdef _BUZZER
+
 #ifndef _BUZZER_H
 #define _BUZZER_H
 
@@ -10,4 +12,5 @@ namespace buzzer
     void off();
 }
 
+#endif
 #endif

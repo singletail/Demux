@@ -9,10 +9,10 @@ namespace http
     uint8_t connected();
     String get(String host, uint16_t port, String uri);
 
-    void connect();
-    void send();
-    void receive();
-    void disconnect();
+    // void connect();
+    // void send();
+    // void receive();
+    // void disconnect();
 }
 
 #endif

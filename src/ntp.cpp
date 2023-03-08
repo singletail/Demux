@@ -2,8 +2,6 @@
 #include "main.h"
 
 #define DEBUG_NTPClient 1
-// #define DST_OFFSET 3600
-// #define GMT_OFFSET -18000
 #define NTP_UPDATE_TIME 3600
 
 namespace ntp
@@ -43,21 +41,6 @@ namespace ntp
             Serial.println("NTP_Init()");
             NTP_Init(geo::getOffset());
         }
-
-        /*
-        Serial.println("timeClient.update()");
-        // return timeClient.update();
-
-        bool check = timeClient.update();
-        if (check == true)
-        {
-            Serial.println("timeClient.update() true");
-        }
-        else
-        {
-            Serial.println("timeClient.update() false");
-        }
-        */
     }
 
     void NTP_GetValues()

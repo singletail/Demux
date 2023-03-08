@@ -30,7 +30,7 @@
 #include <PubSubClient.h>
 #endif
 
-#define PROGRAM_NAME "devo"
+#define PROGRAM_NAME "Demux"
 #define VERSION 1.0
 
 // Serial
