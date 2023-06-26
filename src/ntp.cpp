@@ -8,7 +8,7 @@ namespace ntp
 {
 
     bool NTP_Ready = false;
-    const char *ntp_server = "pool.ntp.org";
+    const char *ntp_server = NTP_SERVER;
     char ntp_return[16] = {'\0'};
     char ntp_ft_c[16];
 

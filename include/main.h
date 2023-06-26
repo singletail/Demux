@@ -2,6 +2,7 @@
 #define _MAIN_H
 
 #include "include.inc"
+#include "../config.inc"
 
 #include <Arduino.h>
 #include <Wire.h>
@@ -35,16 +36,11 @@
 #include "led.h"
 #endif
 
-#define PROGRAM_NAME "Demux"
-#define VERSION 1.0
-
 // Serial
 #define SERIAL_BAUD 921600
 
 // WiFI
 #ifdef _WIFI
-#define WIFI_SSID "Mineshaft"
-#define WIFI_PASS "blivet327"
 #define NET_TIMEOUT 8000
 #endif
 
@@ -55,8 +51,6 @@
 
 void setup();
 void tick();
-// void tick2();
-// void tick_5sec();
 void loop();
 void delayed_network_setup();
 

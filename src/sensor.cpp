@@ -4,17 +4,7 @@
 
 namespace sensor
 {
-    // -------------------------------------------------------//
-    // -------------------------------------------------------//
-
-    // Set each of these manually:
-#ifdef _DEVKITC
-    const char *device_name = "devkitc_v4_2";
-#endif
-
-#ifdef _HELTEC
-    const char *device_name = "heltec_1";
-#endif
+    const char *device_name = SENSOR_ID;
 
 #ifdef _BME
     const uint8_t numVars = 6;
@@ -38,7 +28,6 @@ namespace sensor
     const unsigned long throttle = 10000; // milliseconds
 
     // -------------------------------------------------------//
-    // -------------------------------------------------------//
 
     bool _initialized = false;
     bool _discoverySent = false;
@@ -59,8 +48,8 @@ namespace sensor
         double value = 0;
 
         std::string friendly_name() { return unique_id + " " + name; }
-        std::string state_topic() { return "homeassistant/sensor/" + unique_id + "/state"; }
-        std::string discovery_topic() { return "homeassistant/sensor/" + unique_id + "/" + name + "/config"; }
+        std::string state_topic() { return MQTT_TOPIC + unique_id + "/state"; }
+        std::string discovery_topic() { return MQTT_TOPIC + unique_id + "/" + name + "/config"; }
         std::string value_template() { return "{{ value_json." + name + "|default(0) }}"; }
 
         std::string discovery_payload()

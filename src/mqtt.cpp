@@ -4,10 +4,11 @@
 
 namespace mqtt
 {
-    const char *broker = "milnet.army";
-    const char *user = "esp32";
-    const char *pass = "R0sanne1!";
-    const char *id = "esp32";
+    const char *broker = MQTT_BROKER;
+    const char *user = MQTT_USER;
+    const char *pass = MQTT_PASS;
+    const char *id = MQTT_ID;
+
     const uint16_t port = 1883;
     char receive_buffer[128];
 
@@ -107,7 +108,6 @@ namespace mqtt
         }
     }
 
-    // bool json(char *topic, char *msg, bool retain)
     bool json(std::string topic, std::string msg, bool retain)
     {
         bool ok = false;

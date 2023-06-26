@@ -1,0 +1,32 @@
+#ifndef _CONFIG_INC
+#define _CONFIG_INC
+
+// Program
+#define PROGRAM_NAME "xxx"
+#define VERSION 1.0
+
+// Wifi
+#define WIFI_SSID "xxx"
+#define WIFI_PASS "xxx"
+
+// NTP
+#define NTP_SERVER "pool.ntp.org"
+
+// MQTT
+#define MQTT_BROKER "xxx"
+#define MQTT_USER "xxx"
+#define MQTT_PASS "xxx"
+#define MQTT_ID "xxx"
+#define MQTT_TOPIC "homeassistant/"
+
+// SENSOR
+#define SENSOR_ID "xxx"
+
+// HTTP
+#define HTTP_HOST "xxx"
+
+// Auth
+#define AUTH_RESTORE_CODE "xxx";
+#define AUTH_SERIAL_NUM "xxx";
+
+#endif

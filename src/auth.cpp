@@ -3,8 +3,8 @@
 
 namespace auth {
 
-    const String restoreCode = "FJ9YAYEPAG";
-    const String serialNumber = "EU-1501-1473-5206";
+    const String restoreCode = AUTH_RESTORE_CODE;
+    const String serialNumber = AUTH_SERIAL_NUM;
 
     const String SERVER = "http://mobile-service.blizzard.com";
     const String ENROLL_PATH = "/enrollment/enroll2.htm";

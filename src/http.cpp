@@ -7,7 +7,7 @@
 namespace http
 {
     const bool debug = true;
-    const char *server = "n0.tel";
+    const char *server = HTTP_HOST;
     const uint16_t port = 443;
 
     // WiFiClientSecure *wifiClientSecure = new WiFiClientSecure;

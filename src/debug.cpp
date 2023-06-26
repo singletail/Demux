@@ -21,8 +21,6 @@ namespace debug
         Serial.flush();
         collect();
         print();
-
-        // chipinfo();
     }
 
     void chipinfo()
@@ -88,16 +86,6 @@ namespace debug
             FlashSize /= 1000;
         } while (FlashSize > 0);
         Serial.println("Flash Size: " + ValueString);
-        /*
-            Serial.print("cores: ");
-            Serial.println(chipStruct->cores);
-
-            Serial.print("revision: ");
-            Serial.println(chipStruct->revision);
-
-            Serial.print("features: ");
-            Serial.println(chipStruct->features);
-            */
     }
 
     void collect()
