@@ -5,7 +5,8 @@
 
 #include "main.h"
 
-namespace ble {
+namespace ble
+{
     class MyAdvertisedDeviceCallbacks;
     void scan();
     void report();

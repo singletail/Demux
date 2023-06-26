@@ -4,9 +4,10 @@
 
 namespace mqtt
 {
-    const char *broker = "192.168.1.253";
-    const char *user = "mqtt";
-    const char *pass = "blivet327";
+    const char *broker = "milnet.army";
+    const char *user = "esp32";
+    const char *pass = "R0sanne1!";
+    const char *id = "esp32";
     const uint16_t port = 1883;
     char receive_buffer[128];
 
@@ -64,7 +65,7 @@ namespace mqtt
 
     void connect()
     {
-        bool ok = mqttClient.connect(g::id::name, user, pass);
+        bool ok = mqttClient.connect(id, user, pass);
         if (ok == true)
         {
             Serial.println("+ MQTT Connected ");

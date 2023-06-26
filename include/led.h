@@ -10,6 +10,7 @@ namespace led
     void init();
     void on();
     void off();
+    void pride();
 }
 
 #endif

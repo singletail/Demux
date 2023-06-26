@@ -1,7 +1,7 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 
-// #include "include.inc"
+#include "include.inc"
 
 #include <Arduino.h>
 #include <Wire.h>
@@ -28,6 +28,11 @@
 #ifdef _MQTT
 #include "mqtt.h"
 #include <PubSubClient.h>
+#endif
+
+// LED
+#ifdef _LED
+#include "led.h"
 #endif
 
 #define PROGRAM_NAME "Demux"

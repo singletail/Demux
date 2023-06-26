@@ -1,6 +1,7 @@
 #ifdef _OLED
 
 #include "main.h"
+#include <U8g2lib.h>
 
 namespace oled
 {
@@ -36,14 +37,15 @@ namespace oled
         u8g2.firstPage();
         do
         {
-            //Heltec is 128 x 64
-            
+            // Heltec is 128 x 64
+
             // Wifi
 
-            if (net::getStatus() == true) {
+            if (net::getStatus() == true)
+            {
 
                 // WiFi symbol
-                //u8g2.setFont(u8g2_font_open_iconic_all_2x_t);
+                // u8g2.setFont(u8g2_font_open_iconic_all_2x_t);
                 u8g2.setFont(u8g2_font_open_iconic_all_1x_t);
                 u8g2.drawUTF8(0, 8, "\u00f8"); // WiFi
 
@@ -52,7 +54,6 @@ namespace oled
                 u8g2.setFont(u8g2_font_profont10_tf);
                 u8g2.setCursor(10, 8);
                 u8g2.print(tempWifi);
-
 
                 // NTP Time
                 u8g2.setFont(u8g2_font_profont12_tn);
@@ -80,13 +81,13 @@ namespace oled
             }
 
             u8g2.setFont(u8g2_font_helvB24_tf);
-            
-            #ifdef _RADAR
+
+#ifdef _RADAR
             u8g2.drawUTF8(0, 48, radar::getStatus());
-            #endif
-                
+#endif
+
             // u8g2.print(status_wifi_ssid);
-            //u8g2.print("Hello!");
+            // u8g2.print("Hello!");
 
             // u8g2.setCursor(0, 28);
             // u8g2.print(status_wifi_rssi);

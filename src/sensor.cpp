@@ -59,8 +59,8 @@ namespace sensor
         double value = 0;
 
         std::string friendly_name() { return unique_id + " " + name; }
-        std::string state_topic() { return "home/sensor/" + unique_id + "/state"; }
-        std::string discovery_topic() { return "home/sensor/" + unique_id + "/" + name + "/config"; }
+        std::string state_topic() { return "homeassistant/sensor/" + unique_id + "/state"; }
+        std::string discovery_topic() { return "homeassistant/sensor/" + unique_id + "/" + name + "/config"; }
         std::string value_template() { return "{{ value_json." + name + "|default(0) }}"; }
 
         std::string discovery_payload()

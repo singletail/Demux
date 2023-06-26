@@ -6,6 +6,7 @@
 namespace radar
 {
     void init();
+    void report();
     void read();
     const char *getStatus();
 }
